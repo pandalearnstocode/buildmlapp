@@ -1,4 +1,9 @@
 introduction
 setup
 ides
-extensions-libraries-packages
+extensions
+notebooks
+debugging
+logging
+error-handelling
+scm
