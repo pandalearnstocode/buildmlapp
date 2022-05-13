@@ -39,11 +39,10 @@ jobs:
          # Destination path
          path: docs # optional
      - name: Deploy to GitHub Pages
-       uses: Cecilapp/GitHub-Pages-deploy@master
+       uses: Cecilapp/GitHub-Pages-deploy@v3
        with:
         build_dir: docs               # optional
         jekyll: no                     # optional
+        email: pandalearnstocode@gmail.com
        env:
-          EMAIL: ${{ secrets.EMAIL }}               # must be a verified email
-          GH_TOKEN: ${{ secrets.GH_PAT }} # https://github.com/settings/tokens
-          BUILD_DIR: docs/                     # "_site/" by default
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
